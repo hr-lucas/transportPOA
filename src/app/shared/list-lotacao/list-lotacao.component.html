@@ -1,24 +1,15 @@
+
 <div class="container">
-    <table class="table">
-        <thead>
-          <tr>
-            <!-- <th scope="col">#</th> -->
-            <th scope="col">Codigo</th>
-            <th scope="col">Linha</th>
-            <th scope="col">ID</th>
-          </tr>
-        </thead>
-        <tbody >
-<ng-template ngFor let-listOnibus [ngForOf]="getListLotacao">
-
-          <tr>
-            <td><a href="">{{listOnibus.codigo}}</a></td>
-            <td><a href="">{{listOnibus.nome}}</a></td>
-            <td><a href="">{{listOnibus.id}}</a></td>
-          </tr>
-          
-</ng-template>
-
-        </tbody>
-      </table>
+  <app-search></app-search>
+  <div class="list-group mt-2">
+      <ng-template ngFor let-listOnibus [ngForOf]="getListLotacao">
+      
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                {{listOnibus.codigo}} | {{listOnibus.nome}}
+              </a>
+      </ng-template>
+      
+            </div>
 </div>
+
+
