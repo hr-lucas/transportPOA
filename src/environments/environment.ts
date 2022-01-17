@@ -6,6 +6,8 @@ export const environment = {
   production: false
 };
 
+export const API_PATCH = "http://www.poatransporte.com.br/php/facades/process.php?"
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
